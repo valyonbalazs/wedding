@@ -41,6 +41,38 @@
             width: 100%;
             height: 100%;
         }
+
+        ul.timeline {
+            list-style-type: none;
+            position: relative;
+        }
+        ul.timeline:before {
+            content: ' ';
+            background: #d4d9df;
+            display: inline-block;
+            position: absolute;
+            left: 29px;
+            width: 2px;
+            height: 100%;
+            z-index: 400;
+        }
+        ul.timeline > li {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+        ul.timeline > li:before {
+            content: ' ';
+            background: white;
+            display: inline-block;
+            position: absolute;
+            border-radius: 50%;
+            border: 3px solid #22c0e8;
+            left: 20px;
+            width: 20px;
+            height: 20px;
+            z-index: 400;
+        }
+
     </style>
 </head>
 
@@ -52,34 +84,138 @@
                 <h2>2020. Augusztus 7., Péntek 16:15-től</h2>
             </div>
         </div>
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container-fluid">
-                <h1 class="display-4">Menetrend</h1>
-                <h4>Budavár, Mátyás templom</h4>
-                <p>16:15: Érkezés a Mátyás templomhoz</p>
-                <p>16:30: Templomi szertartás</p>
-                <p>17:05: Kivonulás a templomból</p>
-                <p>17:05: Fotózás a templom előtt</p>
-                <p>17:20: Átvonulás a Hiltonba</p>
-                <p>17:40: Fotózás</p>
-                <p>18:40: Bevonulás a nagy terembe</p>
-                <p>18:50: Vacsora</p>
-                <p>20:20: Nyitótánc</p>
-                <p>20:25: Tánc</p>
-                <p>22:20: Tortavágás</p>
-                <p>22:30: Tánc</p>
+
+        <div class="alert alert-warning" role="alert">
+            A Hotel Hilton a közönség számára továbbra is zárva tart a COVID-19 miatt, csak privát rendezvényeket tartanak meg.
+        </div>
+
+
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <h4>Menetrend</h4>
+                    <ul class="timeline">
+                        <li>
+                            <a href="#">Érkezés</a>
+                            <a href="#" class="float-right">16:15</a>
+                            <p>Találkozás a Mátyás templom oldalsó, 'Mária kapu' bejárata előtt.</p>
+                        </li>
+                        <li>
+                            <a href="#">Templomi szertartás</a>
+                            <a href="#" class="float-right">16:30</a>
+                            <p></p>
+                        </li>
+                        <li>
+                            <a href="#">Kivonulás</a>
+                            <a href="#" class="float-right">17:05</a>
+                            <p></p>
+                        </li>
+                        <li>
+                            <a href="#">Fotózás a templom előtt</a>
+                            <a href="#" class="float-right">17:05</a>
+                            <p></p>
+                        </li>
+                        <li>
+                            <a href="#">Átvonulás a Hiltonba</a>
+                            <a href="#" class="float-right">17:20</a>
+                            <p></p>
+                        </li>
+                        <li>
+                            <a href="#">Fotózás</a>
+                            <a href="#" class="float-right">17:40</a>
+                            <p></p>
+                        </li>
+                        <li>
+                            <a href="#">Bevonulás a nagy terembe</a>
+                            <a href="#" class="float-right">18:40</a>
+                            <p></p>
+                        </li>
+                        <li>
+                            <a href="#">Vacsora</a>
+                            <a href="#" class="float-right">18:50</a>
+                            <p></p>
+                        </li>
+                        <li>
+                            <a href="#">Nyitótánc</a>
+                            <a href="#" class="float-right">20:20</a>
+                            <p></p>
+                        </li>
+                        <li>
+                            <a href="#">Tánc</a>
+                            <a href="#" class="float-right">20:25</a>
+                            <p></p>
+                        </li>
+                        <li>
+                            <a href="#">Tortavágás</a>
+                            <a href="#" class="float-right">22:20</a>
+                            <p></p>
+                        </li>
+                        <li>
+                            <a href="#">Tánc</a>
+                            <a href="#" class="float-right">22:30</a>
+                            <p></p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
 
-        <div class="card text-center">
-            <div class="card-header">
-                Mátyás templom
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container-fluid">
+                <h1 class="display-4">Vacsora</h1>
+                <h4>Budavár, Hilton, 6. emelet, Parlament terem</h4>
+                <h5>Előétel, felszolgálva</h5>
+
+                <ul>                
+                    <li>süllő Terrine Lazac Ikrával</li>
+                    <li>falusi Sonka Cukordinnyével</li>
+                    <li>füstölt Kacsamell Lilahagyma Lekvárral</li>
+                </ul>
+
+                <h5>Leves, felszolgálva</h5>
+                <ul>
+                    <li>libaerőleves Lúdgége Tésztával, Zöldségekkel És Libának Húsával</li>
+                </ul>
+
+                <h5>Főétel, Svéd-asztal</h5>
+                <ul>
+                    <li>juhtúróval Töltött lialacsinta Csőben Sütve</li>
+                    <li>tengeri Halfalatok Chardonnay-mártással</li>
+                    <li>csirkemell Sonkával, Sajttal Töltve lialirikás Krémmártással</li>
+                    <li>sertésszűzsült Calvados Raguval</li>
+                    <li>borjúliörkölt</li>
+                    <li>szezonális Zöldségek Roston Sütve</li>
+                    <li>rozmaringos Sültburgonya</li>
+                    <li>tojásos Tejfölös Galuska</li>
+                </ul>
+
+                <h5>Desszertek</h5>
+                <ul>
+                    <li>málna Alagút</li>
+                    <li>gesztenye Rolád</li>
+                    <li>laktózmentes Barack-maracujás Korong</li>
+                    <li>tiramisu Szelet</li>
+                    <li>meggyes Leliény</li>
+                    <li>somlói Galuska</p>
+                </ul>
+
             </div>
-            <div class="card-body">
-                <img src="https://matyas-templom.hu/images/alaprajz_foldszint.png" class="card-img-top">
-            </div>
-            <div class="card-footer text-muted">
-                <a href="https://matyas-templom.hu/templom-bemutatasa" class="btn btn-primary">Részletes alaprajz</a>
+        </div>
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container-fluid">
+                <h1 class="display-4">Templom</h1>
+                <div class="card text-center">
+                    <div class="card-header">
+                        Alaprajz
+                    </div>
+                    <div class="card-body">
+                        <img src="alaprajz.png" class="card-img-top">
+                    </div>
+                    <div class="card-footer text-muted">
+                        <a href="https://matyas-templom.hu/templom-bemutatasa" class="btn btn-primary">Részletes alaprajz</a>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -101,7 +237,12 @@
         <div class="jumbotron jumbotron-fluid">
             <div class="container-fluid">
                 <h1 class="display-4">Parkolás</h1>
-                <h5>I. kerület, Budavár Bécsi kapu előtt jobbra, Lovas utca, fizetős</h5>
+                <h5>Opciók</h5>
+                <p>Augusztus 7, Péntek, munkanap, parkolás fizetős, de munkanapon csk 18:00 óráig.</p>
+                <ul>
+                    <li>Budavár, Bécsi kapu előtt, Lovas utca, 440Ft/óra</li>
+                    <li>Budavár területe, mindig fizetős, az első fél órai várakozás ingyenes, a második fél óra 520 Forint, majd egy órai várakozás után 630 Ft/óra </li>
+                </ul>
                 <a
                     href="http://www.budavarikapu.hu/index.php/hu/koezterueleti-parkolas/zonak-es-tarifak/parkolasi-dijterkep">Parkolási
                     dijtérkép</a>
